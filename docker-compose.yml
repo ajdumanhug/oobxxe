@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+
+  oobxxe:
+    container_name: OOBXXE
+    build: .
+    restart: always
+    volumes:
+      - .:/var/www/html:ro
+    working_dir: /var/www/html
+    ports:
+      - "80:80"
